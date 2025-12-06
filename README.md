@@ -10,3 +10,7 @@ Branches:
 - feature/user-authentication
 - feature/database-connection
 - feature/api-endpoints
+
+## Feature: Authentication
+Added login page (public/login.html) and server-side /auth/login route.
+Team member: Alice
