@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Products - TeamSim</title>
+</head>
+<body>
+  <h2>Products</h2>
+  <button id="load">Load Products</button>
+  <pre id="out"></pre>
+  <script>
+    document.getElementById('load').addEventListener('click', async () => {
+      try {
+        const r = await fetch('/api/v1/products');
+        const data = await r.json();
+        document.getElementById('out').textContent = JSON.stringify(data, null, 2);
+      } catch (err) {
+        document.getElementById('out').textContent = 'Error: ' + err.message;
+      }
+    });
+  </script>
+</body>
+</html>
