@@ -10,3 +10,5 @@ Branches:
 - feature/user-authentication
 - feature/database-connection
 - feature/api-endpoints
+## Feature: Database
+Added sqlite DB module and seed data (db/db.js). Team member: Bob
