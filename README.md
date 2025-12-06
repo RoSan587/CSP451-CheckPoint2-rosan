@@ -10,7 +10,13 @@ Branches:
 - feature/user-authentication
 - feature/database-connection
 - feature/api-endpoints
+ feat/database-connection
+
+## Feature: Database
+Added sqlite DB module and seed data (db/db.js).
+
 
 ## Feature: Authentication
 Added login page (public/login.html) and server-side /auth/login route.
 Team member: Alice
+
